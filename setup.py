@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="simple_markov",
-    version='1.0',
+    version='1.0.1',
     author="Nobel Yoo",
     author_email="nobr@nobr.me",
     url="https://github.com/fizzy123/simple-markov",
