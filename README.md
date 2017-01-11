@@ -1,4 +1,4 @@
-Lbrary to take in a string or multiple strings and generate a markov string from it. Words are delimited by spaces and passages are delimited by newlines ("\n")
+Library to take in a string or multiple strings and generate a markov string from it. Words are delimited by spaces and passages are delimited by newlines ("\n")
 
 ```
 $ pip install simple_markov

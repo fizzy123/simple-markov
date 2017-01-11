@@ -11,7 +11,7 @@ class Markov():
     def generate(self):
         """ This method generates markov strings. """
         blobs = [blob for blob in self.text.split('\n') if blob]
-        word = random.choice(blobs).split(' ')[0]
+        word = re.escape(random.choice(blobs).split(' ')[0])
         sentence = word
         still_chuggin = True
         while still_chuggin:
@@ -25,7 +25,7 @@ class Markov():
             else:
                 still_chuggin = False
 
-        print(sentence)
+        return sentence.replace('\\', '')
 
     def add_text(self, text):
         """ This method is for when you wanna add text and don't wanna reinstanciate """
